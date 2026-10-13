@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   create:
-    if: github.event.head_commit.message == 'test: create external-fork probe PR'
+    if: "${{ github.event.head_commit.message == 'fix: run external-fork probe PR creator' }}"
     runs-on: ubuntu-latest
     steps:
       - name: Create the reversible owned-account PR
