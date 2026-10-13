@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: harmless arithmetic template probe
+    conditions: []
+    actions:
+      post_check:
+        title: "ARITH={{ 7 * 7 }}"
+        summary: "SUMMARY={{ 8 * 8 }}"
